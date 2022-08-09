@@ -12,8 +12,7 @@ public class OneArray {
         System.out.println("Length "+arr.length);
         int mean=sum/5;
         System.out.println("mean is "+mean);
-        Arrays.sort(arr);
-        double median=(arr.length)/2;
+        double median=arr[(arr.length)/2];
         System.out.println("Median is "+median);
         int maxVal=0, count=0, maxCount=0;
 
