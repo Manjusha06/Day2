@@ -27,17 +27,14 @@ public class Holiday {
         }
         return ((double) sum)/array.length;
     }
-    public static void main(String args[])
-    {
-        Holiday h=new Holiday("Independence day",4,"july");
-        Holiday h1=new Holiday("Independence day",4,"july");
-        Holiday[] array=new Holiday[2];
-        array[0]=h;
-        array[1]=h1;
-        System.out.println(inSameMonth(h,h1));
+    public static void main(String args[]) {
+        Holiday h = new Holiday("Independence day", 4, "july");
+        Holiday h1 = new Holiday("Independence day", 4, "july");
+        Holiday[] array = new Holiday[2];
+        array[0] = h;
+        array[1] = h1;
+        System.out.println(inSameMonth(h, h1));
         System.out.println(avgDate(array));
-
-
 
 
     }
