@@ -5,27 +5,27 @@ import java.util.Scanner;
 public class Assignment1 {
     public static void main(String args[])
     {
-        int rows, column, sum = 0;
+        int students, marks, sum = 0;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of students: ");
-        rows = sc.nextInt();
+        students = sc.nextInt();
         System.out.print("Enter total subjects : ");
-        column = sc.nextInt();
-        int array[][] = new int[rows][column];
-        int sumarray[]  = new int[rows];
-        for(int i =0; i < rows; i++)
+        marks = sc.nextInt();
+        int array[][] = new int[students][marks];
+        int sumarray[]  = new int[students];
+        for(int i =0; i < students; i++)
         {
             System.out.println("Enter student marks" + (i+1) + " : ");
-            for(int j=0; j < column ; j++)
+            for(int j=0; j < marks ; j++)
             {
                 array[i][j] = sc.nextInt();
             }
         }
 
 
-        for (int i = 0; i < rows; i++)
+        for (int i = 0; i < students; i++)
         {
-            for (int j = 0; j < column; j++)
+            for (int j = 0; j < marks; j++)
             {
                 sum += array[i][j];
             }
@@ -40,7 +40,7 @@ public class Assignment1 {
             if(sumarray[i] <= 50)
                 System.out.println("low performers : student " + (i+1) + " - "+ sumarray[i]);
         }
-        System.out.println("overall class average " + sum/rows);
+        System.out.println("overall class average " + sum/students);
         Arrays.sort(sumarray);
         for(int j =0; j< sumarray.length ; j++)
         {
