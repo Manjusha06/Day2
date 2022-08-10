@@ -13,20 +13,19 @@ class Mainclass {
         System.out.println();
     }
 
-    public static void currentUserAccount(){
-        float initialBalance =50000f;
+    public static void currentUserAccount() {
+        float initialBalance = 50000f;
         float deposit = 10000f;
-        float newBalance = initialBalance+ deposit;
+        float newBalance = initialBalance + deposit;
         float overdraft = 0.2f;
         float withdrawAmount = 70000f;
-        float maxWithdraw = 0,remainingBalance = 0;
-        maxWithdraw = newBalance + newBalance*overdraft;
+        float maxWithdraw = 0, remainingBalance = 0;
+        maxWithdraw = newBalance + newBalance * overdraft;
         remainingBalance = maxWithdraw - withdrawAmount;
-        if (maxWithdraw > withdrawAmount){
+        if (maxWithdraw > withdrawAmount) {
             System.out.println("Yes, the requested funds can be withdrawn");
             System.out.println("Your new balance after withdrawal is: " + remainingBalance);
-        }
-        else{
+        } else {
             System.out.println("Insufficient Balance");
         }
 
