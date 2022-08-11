@@ -4,7 +4,7 @@ public class Assignment4 {
     public static void main(String args[]) {
         Scanner SC = new Scanner(System.in);
         System.out.println("Enter Weight 1");
-        float weight1 = SC.nextInt();
+        float weight1 = SC.nextFloat();
         if (weight1 > 15) {
             try {
                 throw new Exception("Total weight is more than 15kgs, ");
@@ -18,7 +18,7 @@ public class Assignment4 {
             System.out.println("Please enter for checkin");
         }
         System.out.println("Enter Weight 1");
-        float weight2 = SC.nextInt();
+        float weight2 = SC.nextFloat();
         if (weight2 > 15) {
             try {
                 throw new Exception("Total weight is more than 15kgs, ");
